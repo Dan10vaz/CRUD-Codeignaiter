@@ -1,4 +1,4 @@
-<?= $cabecera ?>
+<!-- <?= $cabecera ?> -->
 <a class="btn btn-success" href="<?= base_url('crear') ?>">Crear un libro</a>
 <br />
 <br />
@@ -7,7 +7,7 @@
         <thead>
             <tr>
                 <th scope="col">ID</th>
-                <th scope="col">Imagen</th>
+                <th scope="col">imagen</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Acciones</th>
             </tr>
