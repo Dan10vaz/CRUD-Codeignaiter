@@ -1,0 +1,50 @@
+CRITICAL - 2022-12-30 11:00:41 --> unlink(../public/uploadsimagen javaScript.jpg): No such file or directory
+in APPPATH\Controllers\Libros.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploadsimagen javaScript.jpg): No such file or directory', 'APPPATH\\Controllers\\Libros.php', 50)
+ 2 APPPATH\Controllers\Libros.php(50): unlink('../public/uploadsimagen javaScript.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Libros->borrar('2')
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 11:01:04 --> unlink(../public/uploads1672349339_c35e450da06b912c3b9a.png): No such file or directory
+in APPPATH\Controllers\Libros.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads1672349339_c35e450da06b912c3b9a.png): No such file or directory', 'APPPATH\\Controllers\\Libros.php', 50)
+ 2 APPPATH\Controllers\Libros.php(50): unlink('../public/uploads1672349339_c35e450da06b912c3b9a.png')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Libros->borrar('3')
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 11:02:41 --> unlink(../public/uploads1672349339_c35e450da06b912c3b9a.png): No such file or directory
+in APPPATH\Controllers\Libros.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads1672349339_c35e450da06b912c3b9a.png): No such file or directory', 'APPPATH\\Controllers\\Libros.php', 50)
+ 2 APPPATH\Controllers\Libros.php(50): unlink('../public/uploads1672349339_c35e450da06b912c3b9a.png')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Libros->borrar('3')
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 11:03:15 --> unlink(../public/uploads/imagen javaScript.jpg): No such file or directory
+in APPPATH\Controllers\Libros.php on line 50.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/imagen javaScript.jpg): No such file or directory', 'APPPATH\\Controllers\\Libros.php', 50)
+ 2 APPPATH\Controllers\Libros.php(50): unlink('../public/uploads/imagen javaScript.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Libros->borrar('2')
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 11:39:44 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Libros.php on line 60.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Libros.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Libros')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Libros')
+ 4 SYSTEMPATH\CodeIgniter.php(875): class_exists('\\App\\Controllers\\Libros', true)
+ 5 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:57:26 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Libros.php on line 133.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Libros.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Libros')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Libros')
+ 4 SYSTEMPATH\CodeIgniter.php(875): class_exists('\\App\\Controllers\\Libros', true)
+ 5 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

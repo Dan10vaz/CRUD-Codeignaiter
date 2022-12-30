@@ -1,0 +1,2 @@
+<?= $cabecera ?>
+desde nueva
