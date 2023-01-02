@@ -81,3 +81,545 @@ in APPPATH\Controllers\Libros.php on line 64.
  4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
  5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 15:22:14 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(53): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:22:50 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(53): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-02 15:23:45 --> upload is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('upload')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\RestLibro.php(37): CodeIgniter\Controller->validate('libro')
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 15:24:24 --> CodeIgniter\Validation\FileRules::uploaded(): Argument #2 ($name) must be of type string, null given, called in C:\xampp\htdocs\biblioteca\system\Validation\Validation.php on line 314
+in SYSTEMPATH\Validation\FileRules.php on line 51.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\FileRules->uploaded(null, null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('imagen', 'imagen', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\RestLibro.php(37): CodeIgniter\Controller->validate('libro')
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 15:24:43 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(53): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:25:01 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(53): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-02 15:27:20 --> Undefined variable $nuevoNombre
+in APPPATH\Controllers\RestLibro.php on line 58.
+ 1 APPPATH\Controllers\RestLibro.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nuevoNombre', 'APPPATH\\Controllers\\RestLibro.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 15:27:22 --> Undefined variable $nuevoNombre
+in APPPATH\Controllers\RestLibro.php on line 58.
+ 1 APPPATH\Controllers\RestLibro.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nuevoNombre', 'APPPATH\\Controllers\\RestLibro.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 15:27:23 --> Undefined variable $nuevoNombre
+in APPPATH\Controllers\RestLibro.php on line 58.
+ 1 APPPATH\Controllers\RestLibro.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nuevoNombre', 'APPPATH\\Controllers\\RestLibro.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 15:27:23 --> Undefined variable $nuevoNombre
+in APPPATH\Controllers\RestLibro.php on line 58.
+ 1 APPPATH\Controllers\RestLibro.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nuevoNombre', 'APPPATH\\Controllers\\RestLibro.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 15:27:24 --> Undefined variable $nuevoNombre
+in APPPATH\Controllers\RestLibro.php on line 58.
+ 1 APPPATH\Controllers\RestLibro.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nuevoNombre', 'APPPATH\\Controllers\\RestLibro.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 15:27:38 --> Undefined variable $nuevoNombre
+in APPPATH\Controllers\RestLibro.php on line 58.
+ 1 APPPATH\Controllers\RestLibro.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nuevoNombre', 'APPPATH\\Controllers\\RestLibro.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 15:28:13 --> Undefined variable $nuevoNombre
+in APPPATH\Controllers\RestLibro.php on line 58.
+ 1 APPPATH\Controllers\RestLibro.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nuevoNombre', 'APPPATH\\Controllers\\RestLibro.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 15:29:03 --> Undefined variable $id
+in APPPATH\Controllers\RestLibro.php on line 60.
+ 1 APPPATH\Controllers\RestLibro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\RestLibro.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 15:32:33 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:32:54 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:33:09 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:34:37 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:36:21 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:36:27 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:37:43 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:37:57 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:42:23 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:43:19 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(58): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:43:56 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(58): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 15:59:55 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(58): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 16:23:38 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(64): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 16:25:09 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(64): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 16:26:01 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(64): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-02 16:26:01 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 1600.
+ 1 SYSTEMPATH\BaseModel.php(1600): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(710): CodeIgniter\BaseModel->transformDataToArray(false, 'insert')
+ 3 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert(false, true)
+ 4 APPPATH\Controllers\RestLibro.php(67): CodeIgniter\Model->insert(false)
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 16:26:14 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(64): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-02 16:26:14 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 1600.
+ 1 SYSTEMPATH\BaseModel.php(1600): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(710): CodeIgniter\BaseModel->transformDataToArray(false, 'insert')
+ 3 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert(false, true)
+ 4 APPPATH\Controllers\RestLibro.php(67): CodeIgniter\Model->insert(false)
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 16:26:46 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(64): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 16:27:14 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(64): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 16:27:17 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(64): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 16:27:18 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(64): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-02 16:28:22 --> Call to a member function getRandomName() on string
+in APPPATH\Controllers\RestLibro.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 16:28:23 --> Call to a member function getRandomName() on string
+in APPPATH\Controllers\RestLibro.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 16:32:08 --> Undefined variable $nuevoNombre
+in APPPATH\Controllers\RestLibro.php on line 64.
+ 1 APPPATH\Controllers\RestLibro.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nuevoNombre', 'APPPATH\\Controllers\\RestLibro.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 16:32:09 --> Undefined variable $nuevoNombre
+in APPPATH\Controllers\RestLibro.php on line 64.
+ 1 APPPATH\Controllers\RestLibro.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nuevoNombre', 'APPPATH\\Controllers\\RestLibro.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 16:32:46 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(68): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 16:33:30 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(68): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 16:33:32 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(68): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-02 16:34:38 --> mysqli_sql_exception: Column 'imagen' cannot be null in C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\biblioteca\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `li...', 0)
+#1 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `li...')
+#2 C:\xampp\htdocs\biblioteca\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `li...')
+#3 C:\xampp\htdocs\biblioteca\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `li...', Array, false)
+#4 C:\xampp\htdocs\biblioteca\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\biblioteca\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\biblioteca\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\biblioteca\app\Controllers\RestLibro.php(65): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(925): App\Controllers\RestLibro->create()
+#9 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestLibro))
+#10 C:\xampp\htdocs\biblioteca\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\biblioteca\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
