@@ -38,6 +38,13 @@ class Validation extends BaseConfig
         'single' => 'CodeIgniter\Validation\Views\single',
     ];
 
+    public $libro = [
+        'nombre' => 'required|min_length[3]',
+        /* 'imagen' => [
+            'uploaded[imagen]',
+        ] */
+    ];
+
     // --------------------------------------------------------------------
     // Rules
     // --------------------------------------------------------------------
