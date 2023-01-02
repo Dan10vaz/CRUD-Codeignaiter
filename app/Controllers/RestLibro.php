@@ -10,15 +10,10 @@ class RestLibro extends ResourceController
     protected $modelName = 'App\Models\Libro';
     protected $format    = 'json';
 
-    public $nombreImagen = '';
-
     public function index()
     {
-        return $this->generandoRespuesta($this->model->findAll(), "si trajo datos", 200);
+        return $this->generandoRespuesta($this->model->findAll(), "si trajo datosssssss", 200);
     }
-
-
-
 
     public function show($id = null)
     {

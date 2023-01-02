@@ -40,6 +40,8 @@ $routes->get('/', 'Home::index');
 //Rutas API REST
 $routes->resource('api/listar', ['controller' => 'RestLibro']);
 
+$routes->get('api/libros/listar', 'RestLibro::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
