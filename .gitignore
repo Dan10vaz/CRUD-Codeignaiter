@@ -1,1 +1,5 @@
-/app/Config/App.php
+app/Config/App.php
+
+writable/session
+
+writable/*
