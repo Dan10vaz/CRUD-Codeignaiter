@@ -1,4 +1,4 @@
-<!-- <?= $cabecera ?> -->
+<?= $cabecera ?>
 <a class="btn btn-success" href="<?= base_url('crear') ?>">Crear un libro</a>
 <br />
 <br />
