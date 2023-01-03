@@ -37,10 +37,14 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-//Rutas API REST
+//Rutas API REST en una sola
 $routes->resource('api/listar', ['controller' => 'RestLibro']);
 
-$routes->get('api/libros/listar', 'RestLibro::index');
+//Rutas API REST separadas
+
+/* $routes->get('api/libros/listar', 'RestLibro::index');
+
+$routes->put('api/(:segment)', 'RestLibro::update/$1'); */
 
 /*
  * --------------------------------------------------------------------
