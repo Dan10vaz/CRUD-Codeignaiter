@@ -38,13 +38,18 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 
 //Rutas API REST en una sola
-$routes->resource('api/listar', ['controller' => 'RestLibro']);
+$routes->resource('api/libro', ['controller' => 'RestLibro']);
 
 //Rutas API REST separadas
 
 /* $routes->get('api/libros/listar', 'RestLibro::index');
 
 $routes->put('api/(:segment)', 'RestLibro::update/$1'); */
+
+//Rutas para AUTETICACION
+$routes->post("api/registrar", "Register::index");
+$routes->post("api/iniciar", "Login::index");
+$routes->get("api/usuarios", "User::index", ['filter' => 'authFilter']);
 
 /*
  * --------------------------------------------------------------------
@@ -63,6 +68,7 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 
+//Rutas CRUD libros
 $routes->get('listar', 'Libros::index');
 $routes->get('crear', 'Libros::crear');
 $routes->post('guardar', 'Libros::guardar');

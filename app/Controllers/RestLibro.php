@@ -53,33 +53,6 @@ class RestLibro extends ResourceController
         return $this->generandoRespuesta(null, $validation->getErrors(), 500);
     }
 
-
-    public function update($id = null)
-    {
-        $libro = new Libro();
-
-        if ($this->validate('libro')) {
-
-            $imagen = $this->request->getFile('imagen');
-            $nuevoNombre = $imagen->getRandomName();
-            $imagen->move('../public/uploads/', $nuevoNombre);
-
-            $libro->update($id, [
-                'nombre' => $this->request->getPost('nombre'),
-                'imagen' => $nuevoNombre,
-            ]);
-
-            return $this->generandoRespuesta($this->model->find($id), 'Se creo correctamente', 200);
-        }
-
-        $validation = \Config\Services::validation();
-
-        return $this->generandoRespuesta(null, $validation->getErrors(), 500);
-    }
-
-
-
-
     public function generandoRespuesta($data, $msj, $code)
     {
         if ($code == 200) {
