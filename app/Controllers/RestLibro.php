@@ -53,7 +53,6 @@ class RestLibro extends ResourceController
         return $this->generandoRespuesta(null, $validation->getErrors(), 500);
     }
 
-
     public function generandoRespuesta($data, $msj, $code)
     {
         if ($code == 200) {
