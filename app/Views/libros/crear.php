@@ -3,7 +3,7 @@
 
 <div class="card text-start">
     <div class="card-body">
-        <h4 class="card-title">Ingresar datos del libro</h4>
+        <h4 class="card-title">Ingresar datos del librOO</h4>
         <p class="card-text">
 
         <form action="<?= site_url('/guardar') ?>" method="POST" enctype="multipart/form-data">

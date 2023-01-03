@@ -7,8 +7,8 @@
         <thead>
             <tr>
                 <th scope="col">ID</th>
-                <th scope="col">Imagen</th>
-                <th scope="col">PAnbasoo</th>
+                <th scope="col">IMAGEN</th>
+                <th scope="col">Nombre</th>
                 <th scope="col">Acciones</th>
             </tr>
         </thead>
