@@ -40,11 +40,6 @@ $routes->get('/', 'Home::index');
 //Rutas API REST en una sola
 $routes->resource('api/libro', ['controller' => 'RestLibro']);
 
-//Rutas API REST separadas
-
-/* $routes->get('api/libros/listar', 'RestLibro::index');
-
-$routes->put('api/(:segment)', 'RestLibro::update/$1'); */
 
 //Rutas para AUTETICACION
 $routes->post("api/registrar", "Register::index");

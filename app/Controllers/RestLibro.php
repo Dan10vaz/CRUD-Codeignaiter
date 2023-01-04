@@ -53,6 +53,41 @@ class RestLibro extends ResourceController
         return $this->generandoRespuesta(null, $validation->getErrors(), 500);
     }
 
+
+
+    public function update($id = null)
+    {
+        $libro = new Libro();
+
+        $input = $this->request->getRawInput();
+
+        if ($this->validate('libroSinImagen')) {
+            $data = [
+                'nombre' => $input['nombre'],
+            ];
+
+            $libro->update($id, $data);
+
+            return $this->generandoRespuesta($this->model->find($id), 'Se actualizo el titulo correctamente', 200);
+        }
+        $validation = \Config\Services::validation();
+
+        return $this->generandoRespuesta(null, $validation->getErrors(), 500);
+    }
+
+
+    public function delete($id = null)
+    {
+        $libro = new Libro();
+        $datosLibro = $libro->where('id', $id)->first();
+
+        if ($datosLibro) {
+            return $this->generandoRespuesta($this->model->delete($id), 'Se elimino correctamente', 200);
+        } else {
+            return $this->generandoRespuesta(null, "El libro no existe", 500);
+        }
+    }
+
     public function generandoRespuesta($data, $msj, $code)
     {
         if ($code == 200) {

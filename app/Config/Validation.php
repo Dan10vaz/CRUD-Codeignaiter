@@ -43,6 +43,10 @@ class Validation extends BaseConfig
         'imagen' => 'uploaded[imagen]'
     ];
 
+    public $libroSinImagen = [
+        'nombre' => 'required|min_length[3]',
+    ];
+
     // --------------------------------------------------------------------
     // Rules
     // --------------------------------------------------------------------
