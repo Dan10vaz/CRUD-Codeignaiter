@@ -40,9 +40,11 @@ class Validation extends BaseConfig
 
     public $libro = [
         'nombre' => 'required|min_length[3]',
-        /* 'imagen' => [
-            'uploaded[imagen]',
-        ] */
+        'imagen' => 'uploaded[imagen]'
+    ];
+
+    public $libroSinImagen = [
+        'nombre' => 'required|min_length[3]',
     ];
 
     // --------------------------------------------------------------------

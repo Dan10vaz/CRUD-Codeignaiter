@@ -1,5 +1,8 @@
-app/Config/App.php
-
-writable/session
-
-writable/*
+#-------------------------
+# Composer
+#-------------------------
+vendor/
+composer.lock
+writable/
+.phpunit.result*
+build

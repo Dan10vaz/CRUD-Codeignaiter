@@ -12,7 +12,7 @@ class RestLibro extends ResourceController
 
     public function index()
     {
-        return $this->generandoRespuesta($this->model->findAll(), "", 200);
+        return $this->generandoRespuesta($this->model->findAll(), "si trajo datosssssss", 200);
     }
 
     public function show($id = null)
@@ -27,7 +27,7 @@ class RestLibro extends ResourceController
             return $this->generandoRespuesta(null, "El libro no existe", 500);
         }
 
-        return $this->generandoRespuesta($libro, "", 200);
+        return $this->generandoRespuesta($libro, "si hay datos", 200);
     }
 
     public function create()
@@ -36,23 +36,16 @@ class RestLibro extends ResourceController
 
         if ($this->validate('libro')) {
 
-            /* if ($imagen = $this->request->getPost('imagen')) {
-                $nuevoNombre = $imagen->getRandomName();
-                $imagen->move('../public/uploads/', $nuevoNombre);
-
-                $id = $libro->insert([
-                    'nombre' => $this->request->getPost('nombre'),
-                    'imagen' => $this->request->getPost('imagen'),
-                ]);
-
-                return $this->generandoRespuesta($this->model->find($id), null, 200);
-            } */
+            $imagen = $this->request->getFile('imagen');
+            $nuevoNombre = $imagen->getRandomName();
+            $imagen->move('../public/uploads/', $nuevoNombre);
 
             $id = $libro->insert([
                 'nombre' => $this->request->getPost('nombre'),
+                'imagen' => $nuevoNombre,
             ]);
 
-            return $this->generandoRespuesta($this->model->find($id), null, 200);
+            return $this->generandoRespuesta($this->model->find($id), 'Se creo correctamente', 200);
         }
 
         $validation = \Config\Services::validation();
@@ -61,12 +54,47 @@ class RestLibro extends ResourceController
     }
 
 
+
+    public function update($id = null)
+    {
+        $libro = new Libro();
+
+        $input = $this->request->getRawInput();
+
+        if ($this->validate('libroSinImagen')) {
+            $data = [
+                'nombre' => $input['nombre'],
+            ];
+
+            $libro->update($id, $data);
+
+            return $this->generandoRespuesta($this->model->find($id), 'Se actualizo el titulo correctamente', 200);
+        }
+        $validation = \Config\Services::validation();
+
+        return $this->generandoRespuesta(null, $validation->getErrors(), 500);
+    }
+
+
+    public function delete($id = null)
+    {
+        $libro = new Libro();
+        $datosLibro = $libro->where('id', $id)->first();
+
+        if ($datosLibro) {
+            return $this->generandoRespuesta($this->model->delete($id), 'Se elimino correctamente', 200);
+        } else {
+            return $this->generandoRespuesta(null, "El libro no existe", 500);
+        }
+    }
+
     public function generandoRespuesta($data, $msj, $code)
     {
         if ($code == 200) {
             return $this->respond(array(
                 "data" => $data,
-                "code" => $code
+                "code" => $code,
+                "msj" => $msj
             ));
         } else {
             return $this->respond(array(

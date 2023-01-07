@@ -14,7 +14,7 @@ class RestLibroTest extends FeatureTestCase
             'content' => 'Otro contenido'
         ]);
 
-        $result->assertStatus(ResponseInterface::HTTP_OK);
+        $result->assertStatus(ResponseInterface::HTTP_BAD_REQUEST);
     }
 
     public function testIndex(){

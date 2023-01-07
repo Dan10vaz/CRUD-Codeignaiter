@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost:81/biblioteca/public/';
+    public $baseURL = 'http://localhost/biblioteca/public/';
 
     /**
      * --------------------------------------------------------------------------

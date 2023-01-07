@@ -37,8 +37,14 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-//Rutas API REST
-$routes->resource('api/listar', ['controller' => 'RestLibro']);
+//Rutas API REST en una sola
+$routes->resource('api/libro', ['controller' => 'RestLibro']);
+
+
+//Rutas para AUTETICACION
+$routes->post("api/registrar", "Register::index");
+$routes->post("api/iniciar", "Login::index");
+$routes->get("api/usuarios", "User::index", ['filter' => 'authFilter']);
 
 /*
  * --------------------------------------------------------------------
@@ -56,6 +62,8 @@ $routes->resource('api/listar', ['controller' => 'RestLibro']);
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+
+//Rutas CRUD libros
 
 $routes->get('listar', 'Libros::index');
 $routes->get('crear', 'Libros::crear');
